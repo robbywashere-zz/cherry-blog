@@ -1,0 +1,9 @@
+div[ng-controller="PostsNewCtrl"]
+  form
+    fieldset
+      legend
+        | Create Post
+      input#post-title[ng-change="saveAndUpdate()" ng-model-options="{ debounce: 500 }" ng-model="post.title" placeholder="Title" type="text"]
+      br
+      textarea[columns="40" ng-change="saveAndUpdate()" ng-model-options="{ debounce: 500 }" ng-model="post.body" placeholder="Content" rows="4"]
+      br

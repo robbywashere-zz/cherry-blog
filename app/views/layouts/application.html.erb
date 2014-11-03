@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+<head>
+<base href="/">
+<title>Blog</title>
+<%= stylesheet_link_tag    "application", media: "all" %>
+<%= javascript_include_tag "application" %>
+<%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= render 'layouts/nav' %>
+
+<div class="container">
+  <h1>My Blog</h1>
+  <%= yield %>
+
+</div>
+</body>
+</html>
